@@ -1,26 +1,24 @@
 import React from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer'
-
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from 'react-router-dom';
+import Blogs from './blogs'
+import BlogsRead from './blogread'
 
 const App = () => {
   return (
-    <div>
-      <Header/>
-      {/* Hero section start */}
-      <div class="w-full h-screen bg-white ">
-        <div>
-        <p class="text-center mt-32 text-[48px] font-semibold text-gray-800">A UX Case Study on Creating a<p></p> Studious Environment for Students</p>
-        <p class="opacity-90 text-center text-gray-800 text-[16px] font-medium mt-[16px] ">Andrew Jonson<span class="text-black text-[16px] font-medium"> Posted on 27th January 2021</span></p>
-        <img src="" />
-        
-        </div>
-        
+ <div className='h-full'>
 
-
-      </div>
-    
-    </div>
+    <Router>
+      <Routes>
+      <Route path="/" element={<Blogs />} />
+      <Route path="/detail" element={<BlogsRead />} />
+      </Routes>
+    </Router>
+ </div>
+ 
   )
 }
 
