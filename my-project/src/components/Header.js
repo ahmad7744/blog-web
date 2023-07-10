@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -24,13 +25,13 @@ function Header() {
         </svg>
         <div>
           <ul class="flex items-center gap-8 ">
-            <li class="text-white text-center text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a class="active" href="slider.html" >HOME</a></li>
+            <li class="text-white text-center text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href='#home'>HOME</a></li>
             <li class="text-white text-center text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#aboutus">About Us</a></li>
             <li class="text-white text-center text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#features">Features</a></li>
             <li class="text-white text-center text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#blogs">Pricing</a></li>
             <li class="text-white text-center text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#faqs">FAQS</a></li>
             <li class="text-white text-center text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#review">Blogs</a></li>
-            <li class="text-center rounded-[41px] border  border-violet-50 border-opacity-20 cursor-pointer  pl-10 pr-10 pt-2 pb-2 text-[18px] font-medium  text-white"><a href="#contactus">Contact US</a></li>
+           <li class="text-center rounded-[41px] border  border-violet-50 border-opacity-20 cursor-pointer  pl-10 pr-10 pt-2 pb-2 text-[18px] font-medium  text-white"><a href="#contactus">Contact US</a></li>
 
 
           </ul>
