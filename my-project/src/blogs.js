@@ -12,7 +12,7 @@ const Blogs = () => {
                         <p class="opacity-90 text-center text-gray-800 text-[16px] font-medium mt-[16px] ">Andrew Jonson<span class="text-black text-[16px] font-medium"> Posted on 27th January 2021</span></p>
                         <img class="mt-8 mx-auto" src="/images/hero.png" />
                         <p class=" opacity-70 max-w-[831px] mx-auto mt-12 text-center text-gray-800 text-[16px] font-normal">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
-                        <p className='text-center cursor-pointer  opacity-70 mt-4 text-indigo-700 text-[16px] font-normal '>Read More</p>
+                        <Link to="/detail/7"><p className='text-center cursor-pointer  opacity-70 mt-4 text-indigo-700 text-[16px] font-normal '>Read More</p></Link>
                     </div>
 
                     {/*Our Blog section Start Now */}
