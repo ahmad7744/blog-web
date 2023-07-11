@@ -3,8 +3,8 @@ const Footer = () => {
   return (
     <div className='w-full h-full bg-[#1C1E53] text-white '>
 
-      <div className='max-w-7xl mx-auto mt-32'>
-        <div className='max-w-[1058px] flex justify-between pt-[96px]'>
+      <div className='max-w-7xl mx-auto mt-32 '>
+        <div className='max-w-[1058px] flex flex-col sm:flex-row px-5 gap-5 justify-between pt-[96px]'>
           <div className='flex flex-col'>
 
             <div>
@@ -28,22 +28,22 @@ const Footer = () => {
                 </defs>
               </svg>
 
-              <p className='max-w-[399px] opacity-80 text-white text-[16px] font-medium leading-7 mt-6'>We are always open to discuss your project and improve your online presence.</p>
+              <p className='max-w-[399px] opacity-80 text-white text-[10px] sm:text-[12px]  font-medium leading-7 mt-6'>We are always open to discuss your project and improve your online presence.</p>
 
             </div>
-            <div className='max-w-[517px] mt-[64px] bg-amber-200 flex gap-10 pl-9 py-4'>
+            <div className='w-full mt-[64px] bg-amber-200 flex flex-col  md:flex-row gap-5 pl-9 py-4'>
               <div className=''>
-                <p className='text-gray-800 text-[18px] font-medium leading-loose'>Email me at</p>
+                <p className='text-gray-800 text-[12px] md:text-[12px] lg:text-[16px] font-medium leading-loose'>Email me at</p>
                 <address>
-                  <a className='opacity-80 text-gray-800 text-[16px] font-normal leading-7' href='mailto:contact@website.com' >contact@website.com</a>
+                  <a className='opacity-80 text-gray-800 text-[12px] md:text-[8px] lg:text-[16px] font-normal leading-7' href='mailto:contact@website.com' >contact@website.com</a>
                 </address>
 
 
               </div>
 
               <div className=''>
-                <p className='text-gray-800 text-[18px] font-medium leading-loose'>Call us</p>
-                <a className='opacity-80 text-gray-800 text-[16px] font-normal leading-7' href='tel:0927 6277 28525'>0927 6277 28525</a>
+                <p className='text-gray-800 text-[12px] md:text-[12px] lg:text-[16px] font-medium leading-loose'>Call us</p>
+                <a className='opacity-80 text-gray-800 text-[12px] font-normal md:text-[8px] lg:text-[16px] leading-7' href='tel:0927 6277 28525'>0927 6277 28525</a>
               </div>
 
 
@@ -53,9 +53,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <p className='text-white text-[48px] font-semibold leading-10'>Lets Talk!</p>
-            <p className='max-w-[399px] opacity-80 text-violet-50 text-[16px] font-normal leading-7 mt-[14px]'>We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
+          <div className='py-5'>
+            <p className='text-white sm:text-[36px] text-[24px] md:text-[48px] font-semibold leading-10'>Lets Talk!</p>
+            <p className='max-w-[399px] opacity-80 text-violet-50 text-[10px] sm:text-[12px] md:text-[16px] font-normal leading-7 mt-[14px]'>We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
             <div className='flex gap-[24px] mt-[24px] '>
               <svg className='cursor-pointer' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_101_89)">
@@ -111,16 +111,16 @@ const Footer = () => {
 
       </div>
       <div class='w-full h-full bg-white  text-black'>
-      <div class="py-[34px] max-h-24 flex items-center justify-between max-w-7xl mx-auto ">
-        <p className='text-gray-800 text-[16px] font-medium leading-7'>Copyright 2021, Finsweet.com</p>
+      <div class="py-[34px] max-h-24  px-5 items-center justify-between max-w-7xl mx-auto flex flex-col sm:flex-row   ">
+        <p className='text-gray-800 sm:text[16px] md:text-[16px] font-medium leading-7 text-center text-[8px] '>Copyright 2021, Finsweet.com</p>
         <div>
-          <ul class="flex items-center gap-8 ">
-            <li class="text-gray-800 text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a class="active" href="slider.html" >HOME</a></li>
-            <li class="text-gray-800 text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#aboutus">About Us</a></li>
-            <li class="text-gray-800 text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#features">Features</a></li>
-            <li class="text-gray-800 text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#blogs">Pricing</a></li>
-            <li class="text-gray-800 text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#faqs">FAQS</a></li>
-            <li class="text-gray-800 text-[16px] font-medium leading-7 hover:text-[#BBBBCB]"><a href="#review">Blogs</a></li>
+          <ul class="flex  items-center justify-center gap-8 text-gray-800 text-[8px] sm:text-[12px] md:text-[16px] sm:items-center sm:justify-center  font-medium leading-7 ">
+            <li class=" hover:text-[#BBBBCB]"><a href="/" >HOME</a></li>
+            <li class=" hover:text-[#BBBBCB]"><a href="/aboutus">About Us</a></li>
+            <li class=" hover:text-[#BBBBCB]"><a href="/feature">Features</a></li>
+            <li class=" hover:text-[#BBBBCB]"><a href="/pricing">Pricing</a></li>
+            <li class=" hover:text-[#BBBBCB]"><a href="#faqs">FAQS</a></li>
+            <li class=" hover:text-[#BBBBCB]"><a href="#blogs">Blogs</a></li>
             
 
 
