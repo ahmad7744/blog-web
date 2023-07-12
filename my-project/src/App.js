@@ -9,6 +9,7 @@ import BlogsRead from './blogread'
 import Contactus from './contactus'
 import Aboutus from './aboutus';
 import Features from './features';
+import Pricing from './pricing';
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
       <Route path="/contact" element={<Contactus/>} />
       <Route path="/aboutus" element={<Aboutus/>} />
       <Route path="/features" element={<Features/>} />
+      <Route path="/pricing" element={<Pricing/>} />
+
       </Routes>
     </Router>
  </div>

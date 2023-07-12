@@ -2,60 +2,97 @@ import React from 'react'
 
 const contactus = () => {
   return (
-    <div className="py-4 lg:py-8  relative mt-32 ">
-    <img src="https://cdn.tuk.dev/assets/templates/radian/Back_Image.png" className="h-2/5 lg:h-full w-full lg:w-1/2 absolute inset-0 object-cover object-center xl:block hidden" alt="map" />
-    <div className="xl:mx-auto xl:container  relative ">
-        <div className="flex flex-wrap xl:mx-auto xl:container">
-            <div className="w-full relative lg:w-1/2 xl:mt-10 mb-10 2xl:pr-24 2xl:pl-0 xl:pl-12 pl-0 ">
-                <img src="https://cdn.tuk.dev/assets/templates/radian/Back_Image.png" className="h-full w-full xl:w-1/2 absolute inset-0 bg-cover bg-center xl:hidden" alt="map" />
-                <div className="w-full flex flex-col items-start  xl:justify-start  relative z-20 xl:px-0 px-4 xl:py-0 py-4">
-                    <div className="w-full 2xl:pl-48 xl:pt-1">
-                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-wider text-gray-800">We’re Here</h1>
-                        <div className="w-full md:w-10/12 mt-3">
-                            <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider">We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</h2>
-                            <div className="mt-4 md:mt-8">
-                                <h2 className="text-sm md:text-base text-[#1C1E53] font-semibold">Address</h2>
-                                <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2"> OlYMPUS MALL 1st Floor Sector F-11 Markez , Islamabad</h2>
+    
+    <div className="container mx-auto pt-16 max-w-7xl">
+            <div className="xl:flex lg:flex">
+                <div className="xl:w-3/5 lg:w-3/5 bg-gray-200 h-full">
+                    <form id="contact" className="bg-white py-5 px-8">
+                        <h1 className="xl:text-4xl text-2xl text-gray-800 font-extrabold mb-8">Send Us A Message</h1>
+                        <div className="block xl:flex w-full flex-wrap justify-between mb-6">
+                            <div className="w-2/4 max-w-xs mb-6 xl:mb-0">
+                                <div className="flex flex-col">
+                                    <label htmlFor="full_name" className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">
+                                        Full Name
+                                    </label>
+                                    <input required id="full_name" name="full_name" type="text" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder />
+                                </div>
                             </div>
-                            <div className="mt-4 md:mt-8">
-                                <h2 className="text-sm md:text-base text-[#1C1E53] font-semibold">Contact</h2>
-                                <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">+92 3057744974 (Phone)</h2>
-                                <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">+92 3057744974 (Cell)</h2>
-                            </div>
-                            <div className="mt-4 md:mt-8">
-                                <h2 className="text-sm md:text-base text-[#1C1E53] font-semibold">Email</h2>
-                                <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">contact@website.com</h2>
+                            <div className="w-2/4 max-w-xs">
+                                <div className="flex flex-col">
+                                    <label htmlFor="email" className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">
+                                        Email
+                                    </label>
+                                    <input required id="email" name="email" type="email" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder />
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div className="flex w-full flex-wrap">
+                            <div className="w-2/4 max-w-xs">
+                                <div className="flex flex-col">
+                                    <label htmlFor="phone" className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">
+                                        Phone
+                                    </label>
+                                    <input required id="phone" name="phone" type="tel" className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="lg:w-full sm:w-1/2 mt-6">
+                            <div className="flex flex-col">
+                                <label className="text-sm font-semibold text-gray-800 mb-2" htmlFor="message">
+                                    Message
+                                </label>
+                                <textarea placeholder className="text-sm border-gray-300 border mb-6 rounded py-2 outline-none resize-none px-3 xl:w-11/12" rows={5} id="message" defaultValue={""} />
+                            </div>
+                            <button className="focus:outline-none bg-indigo-700 mb-1 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-3 text-sm leading-6">Submit</button>
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <div className="w-full lg:w-1/2   xl:pt-10 lg:pl-24">
-                <div className="flex flex-col items-start xl:justify-start 2xl:justify-end xl:px-0 px-4">
-                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-wider text-[#1C1E53]">Let’s Talk</h1>
-                    <div className="w-full 2xl:w-8/12 mt-3">
-                        <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider">For enquiries, please email us using the form below</h2>
-                        <div className="mt-4 md:mt-8">
-                            <p className="text-gray-800 text-base font-medium">Name</p>
-                            <input className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-5 pl-4 text-gray-800" type="text" placeholder="Justin Timberlake" />
+                <div className="xl:w-2/5 lg:w-2/5 py-16 flex items-center">
+                    <div className="w-5/6 mx-auto">
+                        <p className="text-base text-gray-600 tracking-wide font-normal">
+                        The Olympus Mall, 1st floor, F-11 Markaz <br />
+                            Islamabad.
+                        </p>
+                        <div className="flex flex-col sm:flex-row justify-between mt-6 mb-3">
+                            <div className="flex items-center">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#718096" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                        <rect x={3} y={5} width={18} height={14} rx={2} />
+                                        <polyline points="3 7 12 13 21 7" />
+                                    </svg>
+                                </div>
+                                <p className="pl-2 text-gray-600 text-sm font-normal">contact@website.com</p>
+                            </div>
+                            <div className="flex items-center">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone-call" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#718096" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                        <path d="M4 4h5l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v5a1 1 0 0 1 -1 1a16 16 0 0 1 -16 -16a1 1 0 0 1 1 -1" />
+                                        <path d="M15 7a2 2 0 0 1 2 2" />
+                                        <path d="M15 3a6 6 0 0 1 6 6" />
+                                    </svg>
+                                </div>
+                                
+                                <p className="pl-2 text-gray-600 text-sm font-normal">+1 (308) 321 321</p>
+                            </div>
                         </div>
-                        <div className="mt-4 md:mt-8">
-                            <p className="text-gray-800 text-base font-medium">Email Address</p>
-                            <input className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black py-5 pl-4 text-gray-800" type="email" placeholder="example@mail.com" />
-                        </div>
-                        <div className="mt-4 md:mt-8">
-                            <p className="text-gray-800 text-base font-medium">Message</p>
-                            <textarea className="mt-3 text-base border-2 w-11/12 lg:w-full xl:w-10/12 resize-none hover:border-indigo-600 focus:border-indigo-600 focus:outline-none border-black xl:h-40 py-5 pl-4 text-gray-800" type="text" placeholder="Write us something..." defaultValue={""} />
-                        </div>
-                        <div className="py-5">
-                            <button className="py-3 md:py-5 px-5 md:px-10 bg-gray-900 text-white hover:opacity-90 ease-in duration-150 text-sm md:text-lg tracking-wider font-semibold">Send</button>
-                        </div>
+                        <iframe
+                            className="w-full rounded shadow-lg"
+                            src="https://maps.google.com/maps?q=The Olympus Mall, F-11 Markaz F 11 Markaz F-11, Islamabad, Pakistan&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                            width={425}
+                            height={250}
+                            style={{
+                                border: 0,
+                            }}
+                            allowFullScreen
+                            aria-hidden="false"
+                            tabIndex={0}
+                        />
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
   )
 }
 
