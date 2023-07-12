@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <div className='w-full h-full bg-[#1C1E53] text-white '>
 
-      <div className='max-w-7xl mx-auto mt-32 '>
+      <div className='max-w-7xl mx-auto '>
         <div className='max-w-[1058px] flex flex-col sm:flex-row px-5 gap-5 justify-between pt-[96px]'>
           <div className='flex flex-col'>
 

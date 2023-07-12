@@ -6,9 +6,9 @@ const blogread = () => {
             <div>
                 <div>
                     {/* Hero section start */}
-                    <div class="w-full h-full px-5">
+                    <div class="w-full h-full md:py-32 py-8 sm:py-16 px-5">
                         <div className='flex-col justify-center'>
-                        <p class="text-center mt-10 sm:mt-16 md:mt-32 md:text-[48px]  text-[24px] max-w-[949px] mx-auto font-semibold text-gray-800  ">A UX Case Study on Creating a Studious Environment for Students</p>
+                        <p class="text-center  md:text-[48px]  text-[24px] max-w-[949px] mx-auto font-semibold text-gray-800  ">A UX Case Study on Creating a Studious Environment for Students</p>
                         <p class="opacity-90 text-center text-gray-800 text-[10px] sm:text-[12px] md:text-[16px] font-medium mt-[10px] ">Andrew Jonson<span class="text-black text-[10px] md:text-[16px] sm:text-[12px] font-medium"> Posted on 27th January 2021</span></p>
                         <img class=" mt-4  sm:mt-6 md:mt-8 mx-auto" src="/images/hero.png" />
                         <p class=" opacity-70 max-w-[831px] mx-auto sm:mt-12 mt-4 text-center text-gray-800 text-[10px]  sm:text-[12px] md:text-[16px] font-normal">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.</p>

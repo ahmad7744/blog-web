@@ -10,6 +10,8 @@ import Contactus from './contactus'
 import Aboutus from './aboutus';
 import Features from './features';
 import Pricing from './pricing';
+import Faqs from './faqs';
+import Blog1 from './blog1';
 
 const App = () => {
   return (
@@ -23,6 +25,9 @@ const App = () => {
       <Route path="/aboutus" element={<Aboutus/>} />
       <Route path="/features" element={<Features/>} />
       <Route path="/pricing" element={<Pricing/>} />
+      <Route path="/faqs" element={<Faqs/>} />
+      <Route path="/blog1" element={<Blog1/>} />
+
 
       </Routes>
     </Router>

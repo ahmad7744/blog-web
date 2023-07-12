@@ -3,7 +3,7 @@ import React from 'react'
 const contactus = () => {
   return (
     
-    <div className="container mx-auto pt-16 max-w-7xl">
+    <div className="container mx-auto md:py-32 py-8 sm:py-16 max-w-7xl">
             <div className="xl:flex lg:flex">
                 <div className="xl:w-3/5 lg:w-3/5 bg-gray-200 h-full">
                     <form id="contact" className="bg-white py-5 px-8">
@@ -62,7 +62,7 @@ const contactus = () => {
                                         <polyline points="3 7 12 13 21 7" />
                                     </svg>
                                 </div>
-                                <p className="pl-2 text-gray-600 text-sm font-normal">contact@website.com</p>
+                                <a className="pl-2 text-gray-600 text-sm font-normal"  href='mailto:contact@website.com'>contact@website.com</a>
                             </div>
                             <div className="flex items-center">
                                 <div>
@@ -74,7 +74,7 @@ const contactus = () => {
                                     </svg>
                                 </div>
                                 
-                                <p className="pl-2 text-gray-600 text-sm font-normal">+1 (308) 321 321</p>
+                                <a className="pl-2 text-gray-600 text-sm font-normal" href='tel:0927 6277 28525'>0927 6277 28525</a>
                             </div>
                         </div>
                         <iframe

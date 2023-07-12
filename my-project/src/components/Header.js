@@ -84,18 +84,18 @@ export default function Header() {
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
-            <span className="block h-0.5 w-8 animate-pulse bg-[#BBBBCB]"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-[#BBBBCB] "></span>
             <span className="block h-0.5 w-8 animate-pulse bg-[#BBBBCB]"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-[#BBBBCB]"></span>
           </div>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> 
             <div
-              className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
+              className="CROSS-ICON absolute top-0 right-0 px-8 py-8 "
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
               <svg
-                className="h-8 w-8 text-gray-600"
+                className="h-8 w-8 text-gray-600 "
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -125,7 +125,7 @@ export default function Header() {
                 <a href="/faqs">FAQS</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/faqs">Blogs</a>
+                <a href="/blog1">Blogs</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/contact">Contactus</a>
@@ -135,23 +135,23 @@ export default function Header() {
         </section>
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex text-white items-center text-base font-medium leading-7 ">
-          <li className="hover:text-[#BBBBCB]">
+          <li className="hover:text-[#BBBBCB] hover:animate-bounce">
             <a href="/">Home</a>
           </li>
-          <li className="hover:text-[#BBBBCB]">
+          <li className="hover:text-[#BBBBCB] hover:animate-bounce">
             <a href="/aboutus">About Us</a>
           </li>
-          <li className="hover:text-[#BBBBCB]">
+          <li className="hover:text-[#BBBBCB] hover:animate-bounce">
             <a href="/features">Features</a>
           </li>
-          <li className="hover:text-[#BBBBCB]">
+          <li className="hover:text-[#BBBBCB] hover:animate-bounce">
             <a href="/pricing">Pricing</a>
           </li>
-          <li className="hover:text-[#BBBBCB]">
+          <li className="hover:text-[#BBBBCB] hover:animate-bounce">
             <a href="/faqs">FAQS</a>
           </li>
-          <li className="hover:text-[#BBBBCB]">
-            <a href="/blogs">Blogs</a>
+          <li className="hover:text-[#BBBBCB] hover:animate-bounce">
+            <a href="/blog1">Blogs</a>
           </li>
           
           <li class="text-center rounded-[41px] border  border-violet-50 border-opacity-20 cursor-pointer px-5 py-1  sm:px-10 md:py-2 text-[10px] sm:text-[18px] font-medium  text-white"><a href="/contact">Contact US</a></li>

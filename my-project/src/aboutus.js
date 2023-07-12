@@ -2,8 +2,8 @@ import React from 'react'
 
 const aboutus = () => {
   return (
-    <div className='md:mt-16 mt-2 sm:mt-8 max-w-7xl mx-auto'>
-            <div className="py-12 2xl:px-20 px-6 xl:mx-auto xl:container" >
+    <div className=' md:py-32 py-8 sm:py-16 max-w-7xl mx-auto'>
+            <div className=" px-6 xl:mx-auto xl:container" >
                 <div className="md:flex items-center justify-between">
                     <div className="xl:w-5/12 md:w-1/2 xl:pr-16 md:pr-8">
                         <h1 role="heading" className="lg:text-5xl text-3xl font-bold leading-tight text-gray-800">
@@ -20,7 +20,7 @@ const aboutus = () => {
                         <img src="https://i.ibb.co/wNG9Nk1/pexels-fauxels-3183166-1.png" alt="woman working" className="md:w-auto w-full" />
                     </div>
                 </div>
-                <div className="flex flex-wrap md:mt-16 mt-8 gap-6 flex items-center justify-between">
+                <div className="flex flex-wrap md:mt-16 mt-8 gap-6  items-center justify-between">
                     <div>
                         <div className="flex items-center">
                             <div className="w-10 h-10 bg-indigo-700 rounded-full text-base font-semibold leading-4 text-white flex items-center justify-center">1</div>
