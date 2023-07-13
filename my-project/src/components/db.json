@@ -42,8 +42,108 @@
       "dis": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
       "id": 6
     }
+   
+    
+ 
+    
+  ],
+
+  "blogread":[
+    {
+      "title":"A UX Case Study on Creating a Studious Environment for Students",
+      "name":"Andrew Jonson",
+      "date":"Posted on 27th January 2021",
+      "dis":"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
+      "url":"/images/hero.png",
+      "h1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "li":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "img":"../../images/blog-6.png",
+      "h2":"Ut enim ad minim veniam, quis nostrud.",
+      "id":1
+    },
+
+    {
+      "title":"A UX Case Study on Creating a Studious Environment for Students",
+      "name":"Andrew Jonson",
+      "date":"Posted on 27th January 2021",
+      "dis":"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
+      "url":"/images/hero.png",
+      "h1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "li":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "img":"../../images/blog-5.png",
+      "h2":"Ut enim ad minim veniam, quis nostrud.",
+      "id":2
+    },
+
+    {
+      "title":"A UX Case Study on Creating a Studious Environment for Students",
+      "name":"Andrew Jonson",
+      "date":"Posted on 27th January 2021",
+      "dis":"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
+      "url":"/images/hero.png",
+      "h1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "li":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "img":"../../images/blog-4.png",
+      "h2":"Ut enim ad minim veniam, quis nostrud.",
+      "id":3
+    },
+    {
+      "title":"A UX Case Study on Creating a Studious Environment for Students",
+      "name":"Andrew Jonson",
+      "date":"Posted on 27th January 2021",
+      "dis":"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
+      "url":"/images/hero.png",
+      "h1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "li":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "img":"../../images/blog-3.png",
+      "h2":"Ut enim ad minim veniam, quis nostrud.",
+      "id":4
+    },
+    {
+      "title":"A UX Case Study on Creating a Studious Environment for Students",
+      "name":"Andrew Jonson",
+      "date":"Posted on 27th January 2021",
+      "dis":"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
+      "url":"/images/hero.png",
+      "h1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "li":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "img":"../../images/blog-2.png",
+      "h2":"Ut enim ad minim veniam, quis nostrud.",
+      "id":5
+    },
+    {
+      "title":"A UX Case Study on Creating a Studious Environment for Students",
+      "name":"Andrew Jonson",
+      "date":"Posted on 27th January 2021",
+      "dis":"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
+      "url":"/images/hero.png",
+      "h1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "li":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "img":"../../images/blog.png",
+      "h2":"Ut enim ad minim veniam, quis nostrud.",
+      "id":6
+    },
+    {
+      "title":"A UX Case Study on Creating a Studious Environment for Students",
+      "name":"Andrew Jonson",
+      "date":"Posted on 27th January 2021",
+      "dis":"Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
+      "url":"/images/hero.png",
+      "h1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "li":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+      "img":"../../images/blog-2.png",
+      "h2":"Ut enim ad minim veniam, quis nostrud.",
+      "id":7
+    }
   ]
 
-
-  
 }
+
+
