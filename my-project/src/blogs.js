@@ -14,17 +14,17 @@ const Blogs = () => {
     
     
     
-    <div className="w-full h-full bg-white  px-5 md:py-32 py-8 sm:py-16 " > 
+    <div className="w-full h-full bg-white  px-5 flex flex-col gap-8 sm:gap-16 md:gap-32 md:py-32 py-8 sm:py-16 " > 
       
         {/* Hero section start */}
         {/* ... */}
 
         <div class=" ">
-          <div className="flex-col justify-center ">
+          <div className="flex flex-col justify-center gap-4 md:gap-8 sm:gap-6 ">
             <p class="text-center  md:text-[48px]  text-[24px] max-w-[949px] mx-auto font-semibold text-gray-800  ">
               A UX Case Study on Creating a Studious Environment for Students
             </p>
-            <p class="opacity-90 text-center text-gray-800 text-[10px] sm:text-[12px] md:text-[16px] font-medium mt-[10px] ">
+            <p class="opacity-90 text-center text-gray-800 text-[10px] sm:text-[12px] md:text-[16px] font-medium  ">
               Andrew Jonson
               <span class="text-black text-[10px] md:text-[16px] sm:text-[12px] font-medium">
                 {" "}
@@ -32,10 +32,10 @@ const Blogs = () => {
               </span>
             </p>
             <img
-              class="  mt-4  sm:mt-6 md:mt-8 mx-auto"
+              class="   mx-auto"
               src="/images/hero.png"
             />
-            <p class=" opacity-70 max-w-[831px] mx-auto sm:mt-12 mt-4 text-center text-gray-800 text-[10px]  sm:text-[12px] md:text-[16px] font-normal">
+            <p class=" opacity-70 max-w-[831px] mx-auto  text-center text-gray-800 text-[10px]  sm:text-[12px] md:text-[16px] font-normal">
               Apparently we had reached a great height in the atmosphere, for
               the sky was a dead black, and the stars had ceased to twinkle. By
               the same illusion which lifts the horizon of the sea to the level
@@ -43,7 +43,7 @@ const Blogs = () => {
             </p>
             
             <Link to="/detail/1">
-              <p className="text-center cursor-pointer  opacity-70 mt-1 sm:mt-2 md:mt-4 text-indigo-700 text-[10px] md:text-[16px] sm:text-[14px] font-normal animate-bounce">
+              <p className="text-center cursor-pointer  opacity-70  text-indigo-700 text-[10px] md:text-[16px] sm:text-[14px] font-normal animate-bounce">
                 Read More
               </p>
             </Link>
@@ -52,18 +52,25 @@ const Blogs = () => {
       
       {/* Our Blog section Start Now */}
       {/* ... */}
+
+
+      <div className="flex flex-col md:gap-12 sm:gap-8 gap-6 ">
+
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-5 mx-auto max-w-7xl gap-10 mt-4 md:mt-32 sm:mt-8  ">
+      <p className='text-center  text-gray-800 md:text-[48px] text-[24px] font-semibold'>Our Blog</p>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-5 mx-auto max-w-7xl gap-10 ">
+        
         {data.map((ahmed) => (
-          <div key={ahmed.id}>
+          <div key={ahmed.id} className="flex flex-col gap-1 md:gap-4 sm:gap-2 ">
            <Link to={`/detail/${ahmed.id}`}><img src={ahmed.url} alt={ahmed.title} /></Link> 
-            <p className="md:mt-8 sm:mt-6 mt-3 opacity-70 text-gray-800 text-[10px] sm:text[14px] md:text-[16px] font-medium">
+            <p className=" opacity-70 text-gray-800 text-[10px] sm:text[14px] md:text-[16px] font-medium">
               {ahmed.albumId}
             </p>
-            <p className="text-gray-800 md:text-[24px] sm:text[20px] text-[16px] font-medium leading-9 mx-auto max-w-[404px] sm:mt-2 mt-1 md:mt-4 h-[70px] overflow-hidden">
+            <p className="text-gray-800 md:text-[24px] sm:text[20px] text-[16px] font-medium leading-9  max-w-[404px]  h-[70px] overflow-hidden">
               {ahmed.title}
             </p>
-            <p className="sm:mt-2 mt-1 md:mt-4 max-w-[404px] opacity-70 text-gray-800 text-[10px] sm:text-[12px] md:text-[16px] font-normal leading-7">
+            <p className="max-w-[404px] opacity-70 text-gray-800 text-[10px] sm:text-[12px] md:text-[16px] font-normal leading-7">
               {ahmed.thumbnailUrl}
             </p>
             <Link to={`/detail/${ahmed.id}`}>
@@ -73,6 +80,7 @@ const Blogs = () => {
             </Link>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );
