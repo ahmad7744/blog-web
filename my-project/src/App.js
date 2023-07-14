@@ -13,6 +13,7 @@ import Pricing from './pricing';
 import Faqs from './faqs';
 import Blog1 from './blog1';
 
+
 const App = () => {
   return (
  <div className='h-full'>
@@ -27,6 +28,7 @@ const App = () => {
       <Route path="/pricing" element={<Pricing/>} />
       <Route path="/faqs" element={<Faqs/>} />
       <Route path="/blog1" element={<Blog1/>} />
+
 
 
       </Routes>

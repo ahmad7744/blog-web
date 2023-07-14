@@ -52,10 +52,11 @@ const Blogs = () => {
       
       {/* Our Blog section Start Now */}
       {/* ... */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-5 mx-auto max-w-7xl gap-10 mt-4 md:mt-32 sm:mt-8 ">
         {data.map((ahmed) => (
           <div key={ahmed.id}>
-            <img src={ahmed.url} alt={ahmed.title} />
+           <Link to={`/detail/${ahmed.id}`}><img src={ahmed.url} alt={ahmed.title} /></Link> 
             <p className="md:mt-8 sm:mt-6 mt-3 opacity-70 text-gray-800 text-[10px] sm:text[14px] md:text-[16px] font-medium">
               {ahmed.albumId}
             </p>
