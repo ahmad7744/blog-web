@@ -54,8 +54,11 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
+
+    
     
     <div className="w-full h-full bg-[#1C1E53] px-5">
+       
       <div className="flex items-center justify-between border-b border-[#1C1E53]  max-w-7xl mx-auto  py-8">
       <a href="/">
       <svg width="122" height="25" viewBox="0 0 122 25" fill="none" xmlns="http://www.w3.org/2000/svg">
