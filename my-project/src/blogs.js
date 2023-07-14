@@ -14,7 +14,7 @@ const Blogs = () => {
     
     
     
-    <div className="w-full h-full bg-white  px-5 flex flex-col gap-8 sm:gap-16 md:gap-32 md:py-32 py-8 sm:py-16 " > 
+    <div className="w-full h-full bg-white  px-3 flex flex-col gap-8 sm:gap-16 md:gap-32 md:py-32 py-8 sm:py-16 " > 
       
         {/* Hero section start */}
         {/* ... */}
@@ -59,7 +59,7 @@ const Blogs = () => {
       
       <p className='text-center  text-gray-800 md:text-[48px] text-[24px] font-semibold'>Our Blog</p>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-5 mx-auto max-w-7xl gap-10 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  mx-auto max-w-7xl gap-10 ">
         
         {data.map((ahmed) => (
           <div key={ahmed.id} className="flex flex-col gap-1 md:gap-4 sm:gap-2 ">

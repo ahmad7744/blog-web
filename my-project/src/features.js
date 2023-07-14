@@ -3,7 +3,7 @@ import React from 'react'
 const features = () => {
   return (
     <div className='overflow-y-hidden max-w-7xl mx-auto'>
-    <div className="xl:mx-auto xl:container px-5 md:py-32 py-8 sm:py-16">
+    <div className="xl:mx-auto xl:container px-3 md:py-32 py-8 sm:py-16">
       <div className="lg:flex items-center justify-center lg:space-x-12 2xl:space-x-6">
         <div className>
           <p className="lg:text-4xl text-3xl font-extrabold leading-9 text-gray-800">Why choose us</p>

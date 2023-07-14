@@ -3,7 +3,7 @@ import React from 'react'
 const aboutus = () => {
   return (
     <div className=' md:py-32 py-8 sm:py-16 max-w-7xl mx-auto'>
-            <div className=" px-6 xl:mx-auto xl:container" >
+            <div className=" px-3 xl:mx-auto xl:container" >
                 <div className="md:flex items-center justify-between">
                     <div className="xl:w-5/12 md:w-1/2 xl:pr-16 md:pr-8">
                         <h1 role="heading" className="lg:text-5xl text-3xl font-bold leading-tight text-gray-800">

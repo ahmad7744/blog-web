@@ -12,7 +12,7 @@ const BlogRead = () => {
   }, [id]); 
 
   return (
-            <div className=" px-5 flex flex-col gap-8 sm:gap-16 md:gap-32 md:py-32 py-8 sm:py-16">
+            <div className=" px-3 flex flex-col gap-8 sm:gap-16 md:gap-32 md:py-32 py-8 sm:py-16">
             <div>
                 <div>
                     {/* Hero section start */}
@@ -32,7 +32,7 @@ const BlogRead = () => {
 
                        
 
-                        <div className='mx-auto max-w-[840px] flex flex-col md:gap-10 sm:gap-6 gap-4 px-5'>
+                        <div className='mx-auto max-w-[840px] flex flex-col md:gap-10 sm:gap-6 gap-4 '>
                             <div className="flex flex-col md:gap-8 gap-4 sm:gap-6 ">
                             <p className='text-gray-800 lg: md:text-[48px] sm:text-[24px] text-[14px] font-semibold md:leading-10 sm:leading-8 leading-6 '>{post.title}</p>
                             <p className='text-gray-800 lg: md:text-[38px] sm:text-[24px] text-[14px] font-semibold md:leading-10 sm:leading-8 leading-6  '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
