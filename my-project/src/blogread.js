@@ -46,10 +46,10 @@ const BlogRead = () => {
 
                             </div>
                             
-                            <ul className='list-disc pl-4 flex flex-col md:gap-3 sm:gap-2 gap-1'>
-                              <li className='opacity-70 text-justify text-[6px] sm:text-[8px] md:text-[16px] text-gray-800 text-base font-normal leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
-                              <li className='opacity-70 text-justify text-[6px] sm:text-[8px] md:text-[16px] text-gray-800 text-base font-normal leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
-                              <li className='opacity-70 text-justify text-[6px] sm:text-[8px] md:text-[16px] text-gray-800 text-base font-normal leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+                            <ul className='list-disc pl-4 flex flex-col md:gap-3 sm:gap-2 gap-1 text-[8px] sm:text-[10px] md:text-[16px]'>
+                              <li className='opacity-70 text-justify  text-gray-800  font-normal leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+                              <li className='opacity-70 text-justify  text-gray-800  font-normal leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+                              <li className='opacity-70 text-justify  text-gray-800  font-normal leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
                             </ul>
                             <p className='opacity-70" text-gray-800 text-[8px] sm:text-[10px] md:text-[16px] font-normal leading-3 md:leading-6 sm:leading-5 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <img className='mx-auto  md:mt-8 sm:mt-4 mt-3' src={post.url}/>
