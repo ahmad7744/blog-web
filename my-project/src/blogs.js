@@ -53,14 +53,14 @@ const Blogs = () => {
       {/* Our Blog section Start Now */}
       {/* ... */}
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-5 mx-auto max-w-7xl gap-10 mt-4 md:mt-32 sm:mt-8 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-5 mx-auto max-w-7xl gap-10 mt-4 md:mt-32 sm:mt-8  ">
         {data.map((ahmed) => (
           <div key={ahmed.id}>
            <Link to={`/detail/${ahmed.id}`}><img src={ahmed.url} alt={ahmed.title} /></Link> 
             <p className="md:mt-8 sm:mt-6 mt-3 opacity-70 text-gray-800 text-[10px] sm:text[14px] md:text-[16px] font-medium">
               {ahmed.albumId}
             </p>
-            <p className="text-gray-800 md:text-[24px] sm:text[20px] text-[16px] font-medium leading-9 mx-auto max-w-[404px] sm:mt-2 mt-1 md:mt-4">
+            <p className="text-gray-800 md:text-[24px] sm:text[20px] text-[16px] font-medium leading-9 mx-auto max-w-[404px] sm:mt-2 mt-1 md:mt-4 h-[70px] overflow-hidden">
               {ahmed.title}
             </p>
             <p className="sm:mt-2 mt-1 md:mt-4 max-w-[404px] opacity-70 text-gray-800 text-[10px] sm:text-[12px] md:text-[16px] font-normal leading-7">
