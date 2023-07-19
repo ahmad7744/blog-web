@@ -1,3 +1,4 @@
+import Container from "postcss/lib/container";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 const Blogs = () => {
@@ -7,7 +8,7 @@ const Blogs = () => {
       .then((response) => response.json())
       .then((jsonData) => setData(jsonData));
   }, []);
-  const data = myData.slice(0, 12);
+  const data = myData.slice(0, 3);
 
   const groupdata = [
     {
@@ -73,13 +74,20 @@ const Blogs = () => {
                 </p>
                 <p className="text-white text-[8px] sm:text-[12px] md:text-[16px] font-medium leading-7 flex gap-2 sm:gap-3 md:gap-4 cursor-pointer items-center ">
                   View Pricing
-                  <img className="max-w-[15px]" src="/images/arrow-1.png" alt="arrow" />
+                  <img
+                    className="max-w-[15px]"
+                    src="/images/arrow-1.png"
+                    alt="arrow"
+                  />
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <img className="max-w-[150px] sm:max-w-[250px] md:max-w-[450px] lg:max-w-[638px]" src="/images/lis.png" />
+            <img
+              className="max-w-[150px] sm:max-w-[250px] md:max-w-[450px] lg:max-w-[638px]"
+              src="/images/lis.png"
+            />
           </div>
         </div>
       </div>
@@ -98,7 +106,11 @@ const Blogs = () => {
             </p>
             <p className="text-indigo-700 text-[10px] sm:text-[12px] md:text-[16px] font-medium leading-7 flex gap-4 cursor-pointer items-center ">
               Get in touch with us
-              <img className="max-w-[20px]" src="/images/arrow-2.png" alt="arrow" />
+              <img
+                className="max-w-[20px]"
+                src="/images/arrow-2.png"
+                alt="arrow"
+              />
             </p>
           </div>
 
@@ -157,12 +169,19 @@ const Blogs = () => {
             </p>
             <p className="text-gray-800 text-[10px] sm:text-[12px] md:text-[16px] font-medium leading-7 flex gap-4 cursor-pointer items-center ">
               View More
-              <img className="max-w-[15px] md:max-w-[25px]" src="/images/arrow.png" alt="arrow" />
+              <img
+                className="max-w-[15px] md:max-w-[25px]"
+                src="/images/arrow.png"
+                alt="arrow"
+              />
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-col md:flex lg:flex-row justify-between">
             <div className="relative">
-              <img className="max-w-[349px] md:max-w-[730px] lg:max-w-[883px]" src="/images/Card.png" />
+              <img
+                className="max-w-[349px] md:max-w-[730px] lg:max-w-[883px]"
+                src="/images/Card.png"
+              />
               <div className="bg-gradient-to-tl from-[#1C1E53]  to-[#1C1E536B] w-[349px] absolute h-[247px] md:h-[518px] lg:h-[600px]  top-0 flex flex-col justify-center md:justify-end items-center py-20 ">
                 <div className="flex flex-col  max-w-[313px]">
                   <p className="text-white text-lg sm:text-xl md:text-2xl font-semibold leading-6 sm:leading-7 md:leading-9">
@@ -174,13 +193,17 @@ const Blogs = () => {
                   </p>
                   <p className="text-amber-200 text-[10px] sm:text-[12px] md:text-[16px] font-medium leading-7 flex gap-4 cursor-pointer items-center mt-5 sm:mt-7 md:mt-10 ">
                     View project
-                    <img className="max-w-[20px] md:max-w-[25px]" src="/images/arrow-3.png" alt="arrow" />
+                    <img
+                      className="max-w-[20px] md:max-w-[25px]"
+                      src="/images/arrow-3.png"
+                      alt="arrow"
+                    />
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative flex flex-col md:flex-row md:items-center gap-6">
-              <img  src="/images/rec.png" />
+              <img src="/images/rec.png" />
               <div className="absolute md:h-[284px] md:w-[414px] w-[350px] h-[247px]  bg-gradient-to-tl from-[#1C1E53]  to-[#1C1E536B] top-0 flex flex-col justify-center md:justify-end items-center py-12 ">
                 <div className="flex flex-col max-w-[250px] gap-3">
                   <p className="text-white text-2xl font-semibold leading-9">
@@ -188,12 +211,16 @@ const Blogs = () => {
                   </p>
                   <p className="text-amber-200 text-[10px] sm:text-[12px] md:text-[16px] font-medium leading-7 flex gap-4 cursor-pointer items-center  ">
                     View project
-                    <img className="max-w-[20px] md:max-w-[25px]" src="/images/arrow-3.png" alt="arrow" />
+                    <img
+                      className="max-w-[20px] md:max-w-[25px]"
+                      src="/images/arrow-3.png"
+                      alt="arrow"
+                    />
                   </p>
                 </div>
               </div>
               <div>
-                <img className="" src="/images/Card-1.png"  />
+                <img className="" src="/images/Card-1.png" />
               </div>
             </div>
           </div>
@@ -267,7 +294,10 @@ const Blogs = () => {
                   </div>
                 </div>
                 <div className="">
-                  <img className="cursor-pointer max-w-[54px] lg:max-w-[108px]" src="/images/arrows.png" />
+                  <img
+                    className="cursor-pointer max-w-[54px] lg:max-w-[108px]"
+                    src="/images/arrows.png"
+                  />
                 </div>
               </div>
             </div>
@@ -279,7 +309,7 @@ const Blogs = () => {
 
       <div className="w-full h-full bg-white py-5 px-5 sm:py-8 md:py-24 lg:py-32">
         <div className="flex flex-col  lg:flex-row justify-between max-w-7xl mx-auto">
-          <div className="max-w-[327px] flex flex-col gap-4 ">
+          <div className="max-w-[327px] flex flex-col gap-2 lg:gap-4 ">
             <p className=" text-gray-800 text-[20px] sm:text-[24px] md:text-[30px] lg:text-[38px] font-semibold leading-[28px] lg:leading-[56px]">
               Frequently asked questions
             </p>
@@ -287,13 +317,13 @@ const Blogs = () => {
               Contact us for more info
             </p>
           </div>
-          <div className="w-[350px] sm:w-[745px]  lg:w-[846px] flex flex-col gap-8 ">
-            <div className="flex justify-between ">
-              <div className="flex items-center gap-10">
-                <p className="text-indigo-700 text-2xl font-medium leading-9">
+          <div className="w-[350px] sm:w-[745px]  lg:w-[846px] flex flex-col gap-4 md:gap-6 lg:gap-8 ">
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center  gap-4 md:gap-8 lg:gap-10">
+                <p className="text-indigo-700 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   01
                 </p>
-                <p className="text-gray-800 text-2xl font-medium leading-9">
+                <p className="text-gray-800  text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   How much time does it take?
                 </p>
               </div>
@@ -302,18 +332,18 @@ const Blogs = () => {
               </div>
             </div>
             <div className="flex flex-col gap-12 ">
-              <p className="opacity-90 text-gray-800 text-sm font-medium leading-loose">
+              <p className="opacity-90 text-gray-800 text-xs sm:text-sm md:text-base lg:text-lg font-medium leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <hr className="w-[843px] h-[0px] border border-gray-200"></hr>
+              <hr className="w-[350px] sm:w-[745px]  lg:w-[843px] h-[0px] border border-gray-200"></hr>
             </div>
-            <div className="flex justify-between ">
-              <div className="flex items-center gap-10">
-                <p className="text-indigo-700 text-2xl font-medium leading-9">
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center gap-4 md:gap-8 lg:gap-10">
+                <p className="text-indigo-700 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   02
                 </p>
-                <p className="text-gray-800 text-2xl font-medium leading-9">
+                <p className="text-gray-800 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   What is your class naming convention?
                 </p>
               </div>
@@ -322,14 +352,14 @@ const Blogs = () => {
               </div>
             </div>
             <div>
-              <hr className="w-[843px] h-[0px] border border-gray-200"></hr>
+              <hr className="w-[350px] sm:w-[745px]  lg:w-[843px] h-[0px] border border-gray-200"></hr>
             </div>
-            <div className="flex justify-between ">
-              <div className="flex items-center gap-10">
-                <p className="text-indigo-700 text-2xl font-medium leading-9">
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center gap-4 md:gap-8 lg:gap-10">
+                <p className="text-indigo-700 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   03
                 </p>
-                <p className="text-gray-800 text-2xl font-medium leading-9">
+                <p className="text-gray-800 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   How do you communicate?
                 </p>
               </div>
@@ -338,14 +368,14 @@ const Blogs = () => {
               </div>
             </div>
             <div>
-              <hr className="w-[843px] h-[0px] border border-gray-200"></hr>
+              <hr className="w-[350px] sm:w-[745px]  lg:w-[843px] h-[0px] border border-gray-200"></hr>
             </div>
-            <div className="flex justify-between ">
-              <div className="flex items-center gap-10">
-                <p className="text-indigo-700 text-2xl font-medium leading-9">
-                  02
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center gap-4 md:gap-8 lg:gap-10">
+                <p className="text-indigo-700 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
+                  04
                 </p>
-                <p className="text-gray-800 text-2xl font-medium leading-9">
+                <p className="text-gray-800 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   What is your class naming convention?
                 </p>
               </div>
@@ -354,14 +384,14 @@ const Blogs = () => {
               </div>
             </div>
             <div>
-              <hr className="w-[843px] h-[0px] border border-gray-200"></hr>
+              <hr className="w-[350px] sm:w-[745px]  lg:w-[843px] h-[0px] border border-gray-200"></hr>
             </div>
-            <div className="flex justify-between ">
-              <div className="flex items-center gap-10">
-                <p className="text-indigo-700 text-2xl font-medium leading-9">
-                  02
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center gap-4 md:gap-8 lg:gap-10">
+                <p className="text-indigo-700 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
+                  05
                 </p>
-                <p className="text-gray-800 text-2xl font-medium leading-9">
+                <p className="text-gray-800 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   What is your class naming convention?
                 </p>
               </div>
@@ -370,42 +400,43 @@ const Blogs = () => {
               </div>
             </div>
             <div>
-              <hr className="w-[843px] h-[0px] border border-gray-200"></hr>
+              <hr className="w-[350px] sm:w-[745px]  lg:w-[843px] h-[0px] border border-gray-200"></hr>
             </div>
           </div>
         </div>
       </div>
 
       {/* Contact */}
-      <div className="w-full h-full ">
-        <div className="max-w-7xl mx-auto flex">
+      <div className="w-full h-full py-5 px-5 sm:py-8 md:py-24 lg:py-32 ">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row lg:flex-row">
           <div
-            className="max-w[640px] w-full"
+            className=" max-w-[350px] lg:max-w-[640px] w-full"
             style={{
               backgroundImage: 'url("/images/contact.png")',
               height: "656px",
               width: "691px",
               backgroundRepeat: "no-repeat",
+              backgroundSize: "Container",
             }}
           >
-            <div className="max-w-[464px] flex flex-col gap-6  mx-auto mt-[96px] ">
-              <p className="text-white text-[54px] font-semibold leading-[74px]">
+            <div className="max-w-[464px] flex flex-col gap-6 px-5 mx-auto mt-[46px] lg:mt-[96px] ">
+              <p className="text-white text-[26px] sm:text-[30px] md:text-[40px] lg:text-[54px] font-semibold leading-[34px] lg:leading-[74px]">
                 Building stellar websites for early startups
               </p>
-              <p className="text-white text-base font-medium leading-7">
+              <p className="text-white text-[12px] sm:text-[14px] md:text-[16px] font-medium leading-4 md:leading-7">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua ut
                 enim.
               </p>
             </div>
           </div>
-          <div className="w-full max-w-[640px] bg-[#1C1E53]">
-            <div className="max-w-[432px] flex flex-col gap-10 mx-auto mt-[96px]">
-              <div className="flex flex-col gap-4">
-                <p className="text-white text-[32px] font-medium leading-[48px]">
+          <div className="w-full max-w-[350px] px-5 lg:max-w-[640px] bg-[#1C1E53]">
+            <div className="max-w-[432px] flex flex-col gap-6 sm:gap-10 mx-auto mt-[46px] lg:mt-[96px]">
+              <div className="flex flex-col gap-2 lg:gap-4">
+                <p className="text-white text-[20px] sm:text-[24px] md:text[28px] lg:text-[32px] font-medium leading-[48px]">
                   Send inquiry
                 </p>
-                <p className="text-violet-50 text-base font-medium leading-7">
+                <p className="text-violet-50 text-[12px] sm:text-[14px] lg:text-[16px] font-medium leading-5 lg:leading-7">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
@@ -413,74 +444,45 @@ const Blogs = () => {
               <div className="flex flex-col gap-4">
                 <form>
                   <input
-                    className="h-16 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
-                    placeholder="Your Name" type="text"
+                    className="h-10 sm:h-11 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
+                    placeholder="Your Name"
+                    type="text"
                   ></input>
                 </form>
                 <form>
                   <input
-                    className="h-16 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
-                    placeholder="Email" type="email"
+                    className="h-10  sm:h-11 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
+                    placeholder="Email"
+                    type="email"
                   ></input>
                 </form>
                 <form>
                   <input
-                    className="h-16 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
-                    placeholder="Paste your Figma design URL" type="url"
+                    className="h-10  sm:h-11 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
+                    placeholder="Paste your Figma design URL"
+                    type="url"
                   ></input>
                 </form>
               </div>
-              <div className="flex flex-col items-center gap-[28px]">
-                <p className="text-center rounded-[41px] w-full  bg-amber-200 cursor-pointer px-5 py-1   sm:px-10 md:py-[15px] md:px-[51px] text-[10px] sm:text-[18px] font-semibold text-gray-900">
-                Send an Inquiry
+              <div className="flex flex-col items-center gap-[14px] sm:gap-[20px] lg:gap-[28px]">
+                <p className="text-center rounded-[41px] w-full  bg-amber-200 cursor-pointer px-5 py-2   sm:px-10 md:py-[15px] md:px-[51px] text-[10px] sm:text-[18px] font-semibold text-gray-900">
+                  Send an Inquiry
                 </p>
                 <p className="text-white text-[10px] sm:text-[12px] md:text-[16px] font-medium leading-7 flex gap-4 cursor-pointer items-center ">
-                Get in touch with us
+                  Get in touch with us
                   <img src="/images/arrow-1.png" alt="arrow" />
                 </p>
               </div>
-
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Hero section start */}
-      {/* ... */}
-
-      <div class=" ">
-        <div className="flex flex-col justify-center gap-4 md:gap-8 sm:gap-6 ">
-          <p class="text-center  md:text-[48px]  text-[24px] max-w-[949px] mx-auto font-semibold text-gray-800  ">
-            A UX Case Study on Creating a Studious Environment for Students
-          </p>
-          <p class="opacity-90 text-center text-gray-800 text-[10px] sm:text-[12px] md:text-[16px] font-medium  ">
-            Andrew Jonson
-            <span class="text-black text-[10px] md:text-[16px] sm:text-[12px] font-medium">
-              {" "}
-              Posted on 27th January 2021
-            </span>
-          </p>
-          <img class="   mx-auto" src="/images/hero.png" />
-          <p class=" opacity-70 max-w-[831px] mx-auto  text-center text-gray-800 text-[10px]  sm:text-[12px] md:text-[16px] font-normal">
-            Apparently we had reached a great height in the atmosphere, for the
-            sky was a dead black, and the stars had ceased to twinkle. By the
-            same illusion which lifts the horizon of the sea to the level of the
-            spectator on a hillside.
-          </p>
-
-          <Link to="/detail/1">
-            <p className="text-center cursor-pointer  opacity-70  text-indigo-700 text-[10px] md:text-[16px] sm:text-[14px] font-normal animate-bounce">
-              Read More
-            </p>
-          </Link>
         </div>
       </div>
 
       {/* Our Blog section Start Now */}
       {/* ... */}
 
-      <div className="flex flex-col md:gap-12 sm:gap-8 gap-6 ">
-        <p className="text-center  text-gray-800 md:text-[48px] text-[24px] font-semibold">
+      <div className="flex flex-col md:gap-12 sm:gap-8 gap-6 py-5 px-5 sm:py-8 md:py-24 lg:py-32 mx-auto ">
+        <p className="  text-gray-800 md:text-[48px] text-[24px] font-semibold">
           Our Blog
         </p>
 
