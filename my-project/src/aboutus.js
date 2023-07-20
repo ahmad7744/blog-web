@@ -28,35 +28,31 @@ const aboutus = () => {
 
   const teamdata = [
     {
-        img:"/images/team-1.png",
-        name: "John Smith",
-        post:"CEO",
-        id:1
+      img: "/images/team-1.png",
+      name: "John Smith",
+      post: "CEO",
+      id: 1,
     },
     {
-        img:"/images/team-2.png",
-        name: "Simon Adams",
-        post:"CTO",
-        id:2
-    },
-
-    {
-        img:"/images/team-3.png",
-        name: "Paul Jones",
-        post:"Design Lead",
-        id:3
-
+      img: "/images/team-2.png",
+      name: "Simon Adams",
+      post: "CTO",
+      id: 2,
     },
 
     {
-        img:"/images/team-4.png",
-        name: "Sara Hardin",
-        post:"Project Manager",
-        id:4
+      img: "/images/team-3.png",
+      name: "Paul Jones",
+      post: "Design Lead",
+      id: 3,
     },
 
-
-
+    {
+      img: "/images/team-4.png",
+      name: "Sara Hardin",
+      post: "Project Manager",
+      id: 4,
+    },
   ];
   return (
     <div className="w-full h-full flex flex-col   sm:pt-16 md:pt-24 pt-5 gap-16 lg:gap-32">
@@ -257,7 +253,7 @@ const aboutus = () => {
                   Finsweet Users
                 </p>
               </div>
-              <div className="grid grid-cols-2 lg:flex gap-10 items-center">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:flex  gap-10 items-center">
                 <img src="/images/brand-1.png" />
                 <img src="/images/brand-2.png" />
                 <img src="/images/brand-3.png" />
@@ -270,10 +266,12 @@ const aboutus = () => {
       </div>
       <div className="w-full h-full bg-[#F4F6FC]">
         <div className="max-w-7xl mx-auto py-16 md:py-32">
-            <div className="flex flex-col ">
-                <div className="flex flex-col gap-12">
-                    <p className="text-center text-gray-800 text-[24px] sm:text-[30px] md:text-[38px] lg:text-[48px] font-semibold lg:leading-[64px]">Meet our team</p>
-                    <div className="grid grid-col-1 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-4 mx-auto gap-8">
+          <div className="flex flex-col ">
+            <div className="flex flex-col gap-12">
+              <p className="text-center text-gray-800 text-[24px] sm:text-[30px] md:text-[38px] lg:text-[48px] font-semibold lg:leading-[64px]">
+                Meet our team
+              </p>
+              <div className="grid grid-col-1 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-4 mx-auto gap-8">
                 {teamdata.map((ite, index) => {
                   return (
                     <div
@@ -282,20 +280,29 @@ const aboutus = () => {
                     >
                       <div className=" w-full  flex flex-col items-center">
                         <div className="relative group ">
-                        <img src={ite.img} />
-                        <img src="/images/e.png" className="absolute top-0 left-0 hidden group-hover:block transition-all duration-700" />
-                        <div className=" absolute bottom-6 left-12 gap-3 hidden group-hover:block transition-all duration-700">
+                          <img src={ite.img} />
+                          <img
+                            src="/images/e.png"
+                            className="absolute top-0 left-0 hidden group-hover:block transition-all duration-700"
+                          />
+                          <div className=" absolute bottom-6 left-12 gap-3 hidden group-hover:block transition-all duration-700">
                             <div className="flex gap-3 ">
-                            <img src="/images/f.png"  className="cursor-pointer"/>
-                            <img src="/images/t.png"  className="cursor-pointer"/>
-                            <img src="/images/in.png" className="cursor-pointer" />
-
+                              <img
+                                src="/images/f.png"
+                                className="cursor-pointer"
+                              />
+                              <img
+                                src="/images/t.png"
+                                className="cursor-pointer"
+                              />
+                              <img
+                                src="/images/in.png"
+                                className="cursor-pointer"
+                              />
                             </div>
-                            
+                          </div>
                         </div>
 
-                        </div>
-                        
                         <p className="text-center text-gray-800 text-xl font-medium leading-9 mt-[30px]">
                           {ite.name}
                         </p>
@@ -307,13 +314,9 @@ const aboutus = () => {
                   );
                 })}
               </div>
-
-
-                </div>
             </div>
-
+          </div>
         </div>
-
       </div>
     </div>
   );

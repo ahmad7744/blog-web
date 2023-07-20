@@ -56,7 +56,7 @@ const Blogs = () => {
   ];
   return (
     // fisrt section start now
-    <div className="w-full h-full  flex flex-col">
+    <div className="w-full h-full  flex flex-col ">
       <div className=" w-full h-full bg-[#1C1E53] py-5 lg:py-32 px-5 text-white ">
         <div className="max-w-7xl mx-auto flex justify-between">
           <div className="max-w-[582px] flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6">
@@ -176,7 +176,7 @@ const Blogs = () => {
               />
             </p>
           </div>
-          <div className="flex flex-col gap-3 sm:flex-col md:flex lg:flex-row justify-between">
+          <div className="flex flex-col gap-3 sm:flex-col md:flex lg:flex-row items-center justify-between">
             <div className="relative">
               <img
                 className="max-w-[349px] md:max-w-[730px] lg:max-w-[883px]"
@@ -202,7 +202,7 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-            <div className="relative flex flex-col md:flex-row md:items-center gap-6">
+            <div className="relative flex flex-col  md:flex-col md:items-center gap-6">
               <img src="/images/rec.png" />
               <div className="absolute md:h-[284px] md:w-[414px] w-[350px] h-[247px]  bg-gradient-to-tl from-[#1C1E53]  to-[#1C1E536B] top-0 flex flex-col justify-center md:justify-end items-center py-12 ">
                 <div className="flex flex-col max-w-[250px] gap-3">
@@ -410,7 +410,7 @@ const Blogs = () => {
       <div className="w-full h-full py-5 px-5 sm:py-8 md:py-24 lg:py-32 ">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row lg:flex-row">
           <div
-            className=" max-w-[350px] lg:max-w-[640px] w-full"
+            className=" max-w-[350px] max-h-[435px] sm:max-h-[656px] sm:max-w-[410px] md:max-w-[640px] "
             style={{
               backgroundImage: 'url("/images/contact.png")',
               height: "656px",

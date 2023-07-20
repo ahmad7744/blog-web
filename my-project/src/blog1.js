@@ -29,9 +29,6 @@ const blog1 = () => {
         </div>
       </div>
 
-
-      
-
       <div id="blog" className="bg-gray-100 px-5 xl:px-0 py-32 mx-auto">
         <div className="mx-auto max-w-7xl  container">
           <h1 className="text-center text-3xl lg:text-5xl tracking-wider font-semibold text-gray-900">
