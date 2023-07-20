@@ -10,6 +10,50 @@ const Blogs = () => {
   }, []);
   const data = myData.slice(0, 3);
 
+  const [questions, setQuestions] = useState([
+    {
+      question: "How much time does it take?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      num: 1,
+      isOpen: false,
+    },
+    {
+      question: "What is your class naming convention?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      num: 2,
+      isOpen: false,
+    },
+    {
+      question: "How do you communicate?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      num: 3,
+      isOpen: false,
+    },
+    {
+      question: "I have a bigger project. Can you handle it?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      num: 4,
+      isOpen: false,
+    },
+    {
+      question: "What is your class naming convention?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      num: 5,
+      isOpen: false,
+    },
+  ]);
+
+  const toggleQuestion = (index) => {
+    const updatedQuestions = [...questions];
+    updatedQuestions[index].isOpen = !updatedQuestions[index].isOpen;
+    setQuestions(updatedQuestions);
+  };
+
   const groupdata = [
     {
       icon: "/images/icon.png",
@@ -57,8 +101,8 @@ const Blogs = () => {
   return (
     // fisrt section start now
     <div className="w-full h-full  flex flex-col ">
-      <div className=" w-full h-full bg-[#1C1E53] py-5 lg:py-32 px-5 text-white ">
-        <div className="max-w-7xl mx-auto flex justify-between">
+      <div className=" w-full h-full  bg-[#1C1E53] py-5 lg:py-32 px-5 text-white ">
+        <div className="max-w-7xl mx-auto flex rain justify-between">
           <div className="max-w-[582px] flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6">
             <p className="text-white text-[16px] sm:text-[24px] md:text-[36px] lg:text-[54px] font-semibold lg:leading-[74px] md:leading-[54px] sm:leading-[48px] leading-[24px] ">
               Building stellar websites for early startups
@@ -306,6 +350,46 @@ const Blogs = () => {
       </div>
 
       {/* FAQS Section Start Now */}
+      {/* <div className="max-w-lg mx-auto">
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-xl font-bold">Frequently Asked Questions</h2>
+        <button
+          onClick={toggleQuestion}
+          className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-500 text-white focus:outline-none"
+        >
+          {isOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+            </svg>
+          )}
+        </button>
+      </div>
+     
+    </div> */}
 
       <div className="w-full h-full bg-white py-5 px-5 sm:py-8 md:py-24 lg:py-32">
         <div className="flex flex-col  lg:flex-row justify-between max-w-7xl mx-auto">
@@ -317,28 +401,78 @@ const Blogs = () => {
               Contact us for more info
             </p>
           </div>
-          <div className="w-[350px] sm:w-[745px]  lg:w-[846px] flex flex-col gap-4 md:gap-6 lg:gap-8 ">
-            <div className="flex items-center justify-between ">
-              <div className="flex items-center  gap-4 md:gap-8 lg:gap-10">
-                <p className="text-indigo-700 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
-                  01
-                </p>
-                <p className="text-gray-800  text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
-                  How much time does it take?
-                </p>
+
+          <div className="w-[320px] sm:w-[650px]  lg:w-[846px] flex flex-col gap-4 md:gap-6 lg:gap-8 ">
+            {questions.map((q, index) => (
+              <div className="flex  items-center justify-between ">
+
+                <div className="flex w-full">
+                <div className="flex flex-col  min-w-[320px] sm:min-w-[650px] md:min-w-[720px] lg:min-w-[845px] gap-5 ">
+                  <div className="flex items-center w-full gap-14 ">
+                    <p className="text-indigo-700 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
+                      {q.num}
+                    </p>
+                    <p className="text-gray-800 w-full text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
+                      {q.question}
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-12 ">
+                      {q.isOpen && (
+                        <p className="opacity-90 text-gray-800 text-xs sm:text-sm md:text-base lg:text-lg font-medium leading-loose">
+                          {q.answer}
+                        </p>
+                      )}
+                      <hr className="w-[350px] sm:w-[745px]  lg:w-[875px] h-[0px] border border-gray-200"></hr>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <button
+                    onClick={() => toggleQuestion(index)}
+                    className="flex flex-col  items-center justify-center w-8 h-8 rounded-full bg-white text-white focus:outline-none"
+                  >
+                    {q.isOpen ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          opacity="0.7"
+                          d="M12.1495 13.1605L7.12057 8.1316L1.96717 13.285L0.711315 12.0292L5.86472 6.87575L0.835794 1.84682L1.84269 0.839932L6.87161 5.86886L12.025 0.715453L13.2809 1.9713L8.12746 7.12471L13.1564 12.1536L12.1495 13.1605Z"
+                          fill="#282938"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          opacity="0.7"
+                          d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
+                          fill="#282938"
+                        />
+                      </svg>
+                    )}
+                  </button>
+                </div>
+
+
+                </div>
+                
+               
               </div>
-              <div>
-                <img src="/images/-.png" />
-              </div>
-            </div>
-            <div className="flex flex-col gap-12 ">
-              <p className="opacity-90 text-gray-800 text-xs sm:text-sm md:text-base lg:text-lg font-medium leading-loose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <hr className="w-[350px] sm:w-[745px]  lg:w-[843px] h-[0px] border border-gray-200"></hr>
-            </div>
-            <div className="flex items-center justify-between ">
+            ))}
+
+            {/* <div className="flex items-center justify-between ">
               <div className="flex items-center gap-4 md:gap-8 lg:gap-10">
                 <p className="text-indigo-700 text-[12px] sm:text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-9">
                   02
@@ -348,10 +482,50 @@ const Blogs = () => {
                 </p>
               </div>
               <div>
-                <img src="/images/+.png" />
+              <button
+                  onClick={toggleQuestion}
+                  className="flex items-center justify-center w-8 h-8 rounded-full bg-white text-white focus:outline-none"
+                >
+                  
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <path
+                        opacity="0.7"
+                        d="M12.1495 13.1605L7.12057 8.1316L1.96717 13.285L0.711315 12.0292L5.86472 6.87575L0.835794 1.84682L1.84269 0.839932L6.87161 5.86886L12.025 0.715453L13.2809 1.9713L8.12746 7.12471L13.1564 12.1536L12.1495 13.1605Z"
+                        fill="#282938"
+                      />
+                    </svg>
+                   
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        opacity="0.7"
+                        d="M16 8.71198H8.88802V16H7.11198V8.71198H0V7.28802H7.11198V0H8.88802V7.28802H16V8.71198Z"
+                        fill="#282938"
+                      />
+                    </svg>
+                  
+                </button>
+
               </div>
             </div>
-            <div>
+            <div className="flex flex-col gap-12 ">
+              
+                <p className="opacity-90 text-gray-800 text-xs sm:text-sm md:text-base lg:text-lg font-medium leading-loose">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              
               <hr className="w-[350px] sm:w-[745px]  lg:w-[843px] h-[0px] border border-gray-200"></hr>
             </div>
             <div className="flex items-center justify-between ">
@@ -401,7 +575,7 @@ const Blogs = () => {
             </div>
             <div>
               <hr className="w-[350px] sm:w-[745px]  lg:w-[843px] h-[0px] border border-gray-200"></hr>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -443,21 +617,21 @@ const Blogs = () => {
               </div>
               <div className="flex flex-col gap-4">
                 <form>
-                  <input
+                  <input required id="full_name" name="full_name"
                     className="h-10 sm:h-11 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
                     placeholder="Your Name"
                     type="text"
                   ></input>
                 </form>
                 <form>
-                  <input
+                  <input required id="full_name" name="full_name"
                     className="h-10  sm:h-11 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
                     placeholder="Email"
                     type="email"
                   ></input>
                 </form>
                 <form>
-                  <input
+                  <input required id="full_name" name="full_name"
                     className="h-10  sm:h-11 rounded-lg border border-[#FFFFFF] text-white w-full max-w-[432px] bg-[#1C1E53] border-opacity-5 pl-[32px]"
                     placeholder="Paste your Figma design URL"
                     type="url"
