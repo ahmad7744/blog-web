@@ -102,7 +102,7 @@ const Blogs = () => {
     // fisrt section start now
     <div className="w-full h-full  flex flex-col ">
       <div className=" w-full h-full  bg-[#1C1E53] py-5 lg:py-32 px-5 text-white ">
-        <div className="max-w-7xl mx-auto flex rain justify-between">
+        <div className="max-w-7xl mx-auto flex  justify-between">
           <div className="max-w-[582px] flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6">
             <p className="text-white text-[16px] sm:text-[24px] md:text-[36px] lg:text-[54px] font-semibold lg:leading-[74px] md:leading-[54px] sm:leading-[48px] leading-[24px] ">
               Building stellar websites for early startups
@@ -220,13 +220,13 @@ const Blogs = () => {
               />
             </p>
           </div>
-          <div className="flex flex-col gap-3 sm:flex-col md:flex lg:flex-row items-center justify-between">
-            <div className="relative">
+          <div className="flex flex-col gap-3 sm:flex-col  lg:flex-row items-center justify-between">
+            <div className="relative basis-[67%]">
               <img
-                className="max-w-[349px] md:max-w-[730px] lg:max-w-[883px]"
+                className="w-full "
                 src="/images/Card.png"
               />
-              <div className="bg-gradient-to-tl from-[#1C1E53]  to-[#1C1E536B] w-[349px] absolute h-[247px] md:h-[518px] lg:h-[600px]  top-0 flex flex-col justify-center md:justify-end items-center py-20 ">
+              <div className="bg-gradient-to-tl from-[#1C1E53]  to-[#1C1E536B] w-full sm:max-w-[349px] absolute h-full  top-0 flex flex-col justify-center md:justify-end items-center py-20 ">
                 <div className="flex flex-col  max-w-[313px]">
                   <p className="text-white text-lg sm:text-xl md:text-2xl font-semibold leading-6 sm:leading-7 md:leading-9">
                     Workhub office Webflow Webflow Design
@@ -246,9 +246,10 @@ const Blogs = () => {
                 </div>
               </div>
             </div>
-            <div className="relative flex flex-col  md:flex-col md:items-center gap-6">
-              <img src="/images/rec.png" />
-              <div className="absolute md:h-[284px] md:w-[414px] w-[350px] h-[247px]  bg-gradient-to-tl from-[#1C1E53]  to-[#1C1E536B] top-0 flex flex-col justify-center md:justify-end items-center py-12 ">
+            <div className=" flex flex-col  md:flex-col md:items-center basis-[35%] gap-6">
+              <div className="relative">
+              <img src="/images/rec.png" className="w-full" />
+              <div className="absolute w-full  h-full bg-gradient-to-tl from-[#1C1E53]  to-[#1C1E536B] top-0 flex flex-col justify-center md:justify-end items-center py-12 ">
                 <div className="flex flex-col max-w-[250px] gap-3">
                   <p className="text-white text-2xl font-semibold leading-9">
                     Unisaas Website Design
@@ -263,6 +264,9 @@ const Blogs = () => {
                   </p>
                 </div>
               </div>
+
+              </div>
+              
               <div>
                 <img className="" src="/images/Card-1.png" />
               </div>
